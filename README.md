@@ -5,7 +5,7 @@ Todos estos despliegues los haremos a través de docker compose, recomiendo deja
 
 ## Wordpress 📋
 
-Creamos un diretorio por despliegue, y un fichero docker-compose.yml, dónde añadiremos el código necesario para su funcionamiento.
+Creamos un directorio por despliegue, y un fichero docker-compose.yml, dónde añadiremos el código necesario para su funcionamiento.
 
 _Obtenemos el código desde Docker Hub, asegurándonos que es la imagen oficial_.
 
@@ -44,6 +44,8 @@ volumes:
 ```
 
 Se puede **personalizar** las variables de entorno para que sea más personal.
+
+Abriremos un terminal (es importante que la terminal se abra en la ubicación del archivo, y sino situarte con el comando "cd") y escribiremos el comando _docker compose up -d_
 
 Tras tener los dos contenedores corriendo abrimos la aplicación en el servidor ("Open in browser").
 
