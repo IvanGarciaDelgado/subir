@@ -47,7 +47,7 @@ Se puede **personalizar** las variables de entorno para que sea más personal.
 
 Abriremos un terminal (es importante que la terminal se abra en la ubicación del archivo, y sino situarte con el comando "cd") y escribiremos el comando _docker compose up -d_
 
-Tras tener los dos contenedores corriendo abrimos la aplicación en el servidor ("Open in browser").
+Tras tener los dos contenedores corriendo abrimos la aplicación en el navegador ("Open in browser").
 
 
 ## Adminer 📋
@@ -80,7 +80,7 @@ Se puede **personalizar** la variable de entorno para que sea más personal.
 
 Abriremos un terminal (es importante que la terminal se abra en la ubicación del archivo, y sino situarte con el comando "cd") y escribiremos el comando _docker compose up -d_
 
-Tras tener los dos contenedores corriendo abrimos la aplicación en el servidor ("Open in browser").
+Tras tener los dos contenedores corriendo abrimos la aplicación en el navegador ("Open in browser").
 
 ## Guestbook 📋
 
@@ -106,7 +106,7 @@ services:
 
 Abriremos un terminal (es importante que la terminal se abra en la ubicación del archivo, y sino situarte con el comando "cd") y escribiremos el comando _docker compose up -d_
 
-Tras tener los dos contenedores corriendo abrimos la aplicación en el servidor ("Open in browser").
+Tras tener los dos contenedores corriendo abrimos la aplicación en el navegador ("Open in browser").
 
 ## Mediawiki 📋
 
@@ -160,7 +160,7 @@ Se puede **personalizar** las variables de entorno para que sea más personal.
 
 Abriremos un terminal (es importante que la terminal se abra en la ubicación del archivo, y sino situarte con el comando "cd") y escribiremos el comando _docker compose up -d_
 
-Tras tener los dos contenedores corriendo abrimos la aplicación en el servidor ("Open in browser").
+Tras tener los dos contenedores corriendo abrimos la aplicación en el navegador ("Open in browser").
 
 * Tras arrancar la aplicación y rellenar todos los datos, para terminar la instalación deberás de copiar en el contenedor el fichero LocalSetting.php, se puede hacer a través de comandos (de local a contenedor) o descomentar una línea del código y guardar los cambios.
 * Tras esto, _docker compose down_ y repetimos el comando _docker compose up -d_
@@ -205,7 +205,13 @@ volumes:
 
 ```
 
+Y finalmente tras tener los dos contenedores corriendo abrimos la aplicación en el navegador ("Open in browser").
+
 ## Servidor Web Apache 📋
+
+Creamos un directo y un fichero docker-compose.yml.
+
+Copiaremos este codigo en el fichero.
 
 ```
 version: '3.9'
@@ -220,4 +226,9 @@ services:
 
 ```
 
+Abriremos un terminal (es importante que la terminal se abra en la ubicación del archivo, y sino situarte con el comando "cd") y escribiremos el comando _docker compose up -d_
+
+Tras tener los dos contenedores corriendo abrimos la aplicación en el navegador ("Open in browser").
+
+Comprobaremos que se nos ha creado en nuestro directorio un nuevo fichero "website", si al abrirlo en el navegador no funciona cambiamos el _htdocs_ por _html_.
 
