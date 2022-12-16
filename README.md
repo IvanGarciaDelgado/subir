@@ -1,8 +1,11 @@
 # DOCKER-COMPOSE
 
-Instalación de servidor apache, mediawiki, wordpress, adminer y guestbook.
+En esta práctica veremos la instalación de Mediawiki, Wordpress, Adminer, Guestbook y un servidor Apache.
+Todos estos despliegues los haremos a través de docker compose, recomiendo dejar el servidor apache el último para que no altere el funcionamiento de los demás.
 
 ## Wordpress 📋
+
+Creamos un diretorio por despliegue, y un fichero docker-compose.yml, dónde añadiremos el código necesario para su funcionamiento.
 
 _Obtenemos el código desde Docker Hub, asegurándonos que es la imagen oficial_.
 
@@ -41,6 +44,8 @@ volumes:
 ```
 
 Se puede **personalizar** las variables de entorno para que sea más personal.
+
+Tras tener los dos contenedores corriendo abrimos la aplicación en el servidor ("Open in browser").
 
 
 ## Adminer 📋
